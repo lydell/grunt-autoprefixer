@@ -1,5 +1,5 @@
 # grunt-autoprefixer
-[![Build Status](https://travis-ci.org/nDmitry/grunt-autoprefixer.png?branch=master)](https://travis-ci.org/nDmitry/grunt-autoprefixer) 
+[![Build Status](https://travis-ci.org/nDmitry/grunt-autoprefixer.png?branch=master)](https://travis-ci.org/nDmitry/grunt-autoprefixer)
 [![Dependency Status](https://david-dm.org/nDmitry/grunt-autoprefixer.png)](https://david-dm.org/nDmitry/grunt-autoprefixer)
 
 > [Autoprefixer](https://github.com/ai/autoprefixer) parses CSS and adds vendor-prefixed CSS properties using the [Can I Use](http://caniuse.com/) database.
@@ -48,6 +48,18 @@ You can specify browsers actual for your project:
 ```js
 options: {
   browsers: ['last 2 version', 'ie 8', 'ie 7']
+}
+```
+
+#### options.sourcemap
+Type: `Boolean`
+Default value: `false`
+
+You can specify whether or not a source map should be created.
+
+```js
+options: {
+  sourcemap: true
 }
 ```
 
