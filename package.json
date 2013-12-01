@@ -32,7 +32,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "autoprefixer": "~0.8.20131020"
+    "autoprefixer": "lydell/autoprefixer#source-maps-2",
+    "climap": "~0.1.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

@@ -43,7 +43,8 @@ module.exports = function(grunt) {
         autoprefixer: {
             options: {
                 // We need to `freeze` browsers versions for testing purposes.
-                browsers: ['opera 12', 'ff 15', 'chrome 25']
+                browsers: ['opera 12', 'ff 15', 'chrome 25'],
+                sourcemap: true
             },
             single_file: {
                 src: 'test/fixtures/gradient.css',
