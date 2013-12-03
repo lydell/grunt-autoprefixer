@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "autoprefixer": "lydell/autoprefixer#source-maps-2",
-    "climap": "~0.1.1"
+    "climap": "~0.1.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

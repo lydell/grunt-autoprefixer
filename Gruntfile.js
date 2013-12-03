@@ -65,6 +65,10 @@ module.exports = function(grunt) {
             },
             multiple_no_dest: {
                 src: 'tmp/multiple_no_dest/*.css'
+            },
+            single_file_in_sourcemap: {
+                src: 'test/fixtures/gradient.min',
+                dest: 'tmp/single_file_in_sourcemap.css'
             }
         },
 

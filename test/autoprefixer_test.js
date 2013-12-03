@@ -92,4 +92,15 @@ exports.autoprefixer = {
         test.done();
     },
 
+    single_file_in_sourcemap: function(test) {
+        var actual = grunt.file.read('tmp/single_file_in_sourcemap.css');
+        var expected = grunt.file.read('test/expected/single_file.css') +
+                       '\n/*# sourceMappingURL=single_file_in_sourcemap.css.map */';
+        var sourcemap = grunt.file.read('tmp/single_file_in_sourcemap.css.map');
+
+        test.strictEqual(actual, expected, 'should prefix single file with in-sourcemap.');
+        test.ok(sourcemap, 'should produce source map.');
+        test.done();
+    },
+
 };
