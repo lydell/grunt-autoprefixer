@@ -1,3 +1,20 @@
+# Fork information
+
+This fork adds one thing: Source map support. That's the only intended change there will ever be. I
+will support this fork until the [source map issue] in the original grunt-autoprefixer repo is
+resolved.
+
+[source map issue]: https://github.com/nDmitry/grunt-autoprefixer/issues/2
+
+## Installation:
+
+Add `autoprefixer: "lydell/grunt-autoprefixer#source-maps"` to package.json and run `npm install`.
+That will always install the latest version, but I don't think that is a problem. (You can specify
+specific commits if you really need to.)
+
+Remember to set `sourcemap: true` in the options for autoprefixer in your Gruntfile to actually
+enable source maps. Here is an [example Gruntfile](https://gist.github.com/lunelson/7804039).
+
 # grunt-autoprefixer
 [![Build Status](https://travis-ci.org/nDmitry/grunt-autoprefixer.png?branch=master)](https://travis-ci.org/nDmitry/grunt-autoprefixer)
 [![Dependency Status](https://david-dm.org/nDmitry/grunt-autoprefixer.png)](https://david-dm.org/nDmitry/grunt-autoprefixer)
