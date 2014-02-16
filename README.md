@@ -4,6 +4,8 @@ This fork adds one thing: Source map support. That's the only intended change th
 will support this fork until the [source map issue] in the original grunt-autoprefixer repo is
 resolved.
 
+**Update:** The original grunt-autoprefixer (version 0.6+) now has source map support. Do not use this fork anymore.
+
 [source map issue]: https://github.com/nDmitry/grunt-autoprefixer/issues/2
 
 ## Installation:
